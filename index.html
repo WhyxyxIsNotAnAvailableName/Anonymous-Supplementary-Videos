@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anonymous Supplementary Videos</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #111;
+    }
+    h1 {
+      margin-bottom: 8px;
+    }
+    .intro {
+      color: #444;
+      margin-bottom: 28px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .meta {
+      margin: 6px 0;
+    }
+    video {
+      width: 100%;
+      max-width: 760px;
+      margin-top: 14px;
+      border-radius: 8px;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anonymous Supplementary Videos</h1>
+  <p class="intro">
+    This page provides supplementary qualitative videos for an anonymous ICML 2026 rebuttal.
+  </p>
+
+  <div class="card">
+    <div class="title">Ours</div>
+    <p class="meta">Successfully open the middle drawer.</p>
+    <video controls preload="metadata">
+      <source src="videos/drawer_succ_3x.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="card">
+    <div class="title">Failure case 1</div>
+    <p class="meta">Failed to open the middle drawer since the end-effector shook violently and failed to grasp the handle firmly.</p>
+    <video controls preload="metadata">
+      <source src="videos/drawer_fail_3x.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="card">
+    <div class="title">Ours</div>
+    <p class="meta">Successfully pick the red drink to desk.</p>
+    <video controls preload="metadata">
+      <source src="videos/red_succ_3x.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="card">
+    <div class="title">Failure case 2</div>
+    <p class="meta">Failed to pick the red drink to the desk since the agent hesitated between the red and blue drinks due to semantic ambiguity, resulting in an eventual grasp failure.</p>
+    <video controls preload="metadata">
+      <source src="videos/red_fail_3x.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="card">
+    <div class="title">Failure case 3</div>
+    <p class="meta">Failed to pick the blue drink to the desk since the end-effector shook violently, causing the drink to drop.</p>
+    <video controls preload="metadata">
+      <source src="videos/blue_fail_3x.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>
